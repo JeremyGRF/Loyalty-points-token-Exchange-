@@ -8,14 +8,14 @@ from web3 import Web3
 w3 = Web3(Web3.HTTPProvider('HTTP://127.0.0.1:7545'))
 ################################################################################
 
-# Best Buy Exchange List
+# Delta Exchange List
 
 # Database of Delta Exchange items including their name, digital address, rating and hourly cost per Ether.
-# A single Ether is currently valued at $1,500
+
 gift_database = {
     "Gift Card": ["Gift Card $50", "0xaC8e9876ed5C4a0fC41a84Ee4950F417f67029F0", "3.0", 500, "Images/d_giftcard.jpg"],
-    "Model": ["Model B747", "0x2422858F9C7654c2724A309D58Ffd7Ac8bF65396", "2.0", 350, "d_model.jpg"],
-    "Puzzle": ["Puzzle Roden DC-6", "0x8fD00f170FDf1234C5ebdCD90bF257316c69BA45", "1.0", 300, "d_puzzle.jpg"],
+    "Model": ["Model B747", "0x2422858F9C7654c2724A309D58Ffd7Ac8bF65396", "2.0", 350, "Images/d_model.jpg"],
+    "Puzzle": ["Puzzle Roden DC-6", "0x8fD00f170FDf1234C5ebdCD90bF257316c69BA45", "1.0", 300, "Images/d_puzzle.jpg"],
 }
 
 # A list of the gifts
