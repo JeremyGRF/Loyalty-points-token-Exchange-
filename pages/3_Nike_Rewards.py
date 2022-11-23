@@ -10,17 +10,17 @@ w3 = Web3(Web3.HTTPProvider('HTTP://127.0.0.1:7545'))
 
 # Best Buy Exchange List
 
-# Database of Best Buy Exchange items including their name, digital address, rating and hourly cost per Ether.
-# A single Ether is currently valued at $1,500
+# Database of Nike Exchange items including their name, digital address, rating and hourly cost per Ether.
+
 gift_database = {
-    "Air Zoom": ["Air Zoom Flight 95", "0xaC8eB8B2ed5C4a0fCa7sh8de4950F417f67029F0", "3.0", 1200, "Images/bb_sccoter.jpeg"],
-    "Bag": ["Elemental Bag", "0x2422858F9C4480c2724A309D5dn12bAc8bF65396", "1.0", 400, "Images/bb_giftcard.jpeg"],
-    "Winflo": ["Winflo 8 Premium", "0x8fD0di83ujDf3772C5ebdCD90bF257316c69BA45", "4.0", 900, "Images/bb_camera.jpeg"],
-    "Basketball": ["Basketball - Jordon Skills", "0x8fD00f17076dy26dC5ebdCD90bF257316c69BA45", "2.0", 150, "Images/bb_gopro.jpeg"]
+    "Air Zoom": ["Air Zoom Flight 95", "0xaC8eB8B2ed5C4a0fCa7sh8de4950F417f67029F0", "3.0", 1200, "Images/n_air.jpg"],
+    "Bag": ["Elemental Bag", "0x2422858F9C4480c2724A309D5dn12bAc8bF65396", "2.0", 400, "Images/n_bag.jpg"],
+    "Winflo": ["Winflo 8 Premium", "0x8fD0di83ujDf3772C5ebdCD90bF257316c69BA45", "3.0", 900, "Images/n_ball.png"],
+    "Basketball": ["Basketball - Jordon Skills", "0x8fD00f17076dy26dC5ebdCD90bF257316c69BA45", "1.0", 150, "Images/n_shoes.jpg"]
 }
 
 # A list of the gifts
-gift = ["Scooter", "Gift Card", "Camera", "GoPro"]
+gift = ["Air Zoom", "Bag", "Winflo", "Basketball"]
 
 
 def get_gift(w3):
@@ -33,15 +33,15 @@ def get_gift(w3):
         st.write("Name: ", db_list[number][0])
         st.write("Gift Address: ", db_list[number][1])
         st.write("Value Rating: ", db_list[number][2])
-        st.write("Best Buy Reward Point per gift: ", db_list[number][3], "eth")
+        st.write("Nike Reward Point per gift: ", db_list[number][3], "NiKE")
         st.text(" \n")
 
 ################################################################################
 # Streamlit Code
 
 # Streamlit application headings
-st.markdown("# Best Buy Reward List")
-st.markdown("## Exchange Reward With Best Buy Token")
+st.markdown("# Nike Reward List")
+st.markdown("## Exchange Reward With Nike Token")
 st.text(" \n")
 
 ################################################################################
@@ -106,7 +106,7 @@ st.sidebar.write(gift_address)
 
 # Write the Fintech Finder candidate's name to the sidebar
 
-st.sidebar.markdown("## Total Best Buy Reward Points")
+st.sidebar.markdown("## Total Nike Reward Points")
 
 ################################################################################
 # Step 2: Sign and Execute a Payment Transaction

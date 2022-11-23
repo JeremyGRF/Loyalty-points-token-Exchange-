@@ -8,19 +8,18 @@ from web3 import Web3
 w3 = Web3(Web3.HTTPProvider('HTTP://127.0.0.1:7545'))
 ################################################################################
 
-# Best Buy Exchange List
+# Starbucks Exchange List
 
-# Database of Best Buy Exchange items including their name, digital address, rating and hourly cost per Ether.
-# A single Ether is currently valued at $1,500
+# Database of Starbucks Exchange items including their name, digital address, rating and hourly cost per Ether.
 gift_database = {
-    "Scooter": ["Scooter - Lane Segway - Ninebot D40X", "0xaC8eB8B2ed5C4a0fC41a84Ee4950F417f67029F0", "3.0", 650, "Images/bb_sccoter.jpeg"],
-    "Gift Card": ["Best Buy Gift Card", "0x2422858F9C4480c2724A309D58Ffd7Ac8bF65396", "1.0", 50, "Images/bb_giftcard.jpeg"],
-    "Camera": ["Sony Alpha a7 III", "0x8fD00f170FDf3772C5ebdCD90bF257316c69BA45", "4.0", 1800, "Images/bb_camera.jpeg"],
-    "GoPro": ["GoPro HERO11", "0x8fD00f170FDf3772C5ebdCD90bF257316c69BA45", "2.0", 400, "Images/bb_gopro.jpeg"]
+    "Bean": ["Coffee Bean - Medium Roast ", "0xaC8eB8B2ed5C4dhb328a84Ee4950F417f67029F0", "2.0", 300, "Images/s_bean.jpg"],
+    "Drink": ["Peppermint Mocha", "0x2422858F9C4480c2dn23nb9D58Ffd7Ac8bF65396", "1.0", 50, "Images/s_drink.jpg"],
+    "Gift Card": ["Starbucks Gift Card $25", "0x8fD00f170FDfdb329h1bdCD90bF257316c69BA45", "3.0", 250, "Images/s_giftcard.jpg"],
+    "Tumbler": ["Gold Studded Tumbler", "0x8fD00f1KN32H3772C5ebdCD90bF257316c69BA45", "4.0", 600, "Images/s_tumbler.jpg"]
 }
 
 # A list of the gifts
-gift = ["Scooter", "Gift Card", "Camera", "GoPro"]
+gift = ["Bean", "Drink", "Gift Card", "Tumbler"]
 
 
 def get_gift(w3):
@@ -33,15 +32,15 @@ def get_gift(w3):
         st.write("Name: ", db_list[number][0])
         st.write("Gift Address: ", db_list[number][1])
         st.write("Value Rating: ", db_list[number][2])
-        st.write("Best Buy Reward Point per gift: ", db_list[number][3], "eth")
+        st.write("Starbucks Reward Point per gift: ", db_list[number][3], "STRB")
         st.text(" \n")
 
 ################################################################################
 # Streamlit Code
 
 # Streamlit application headings
-st.markdown("# Best Buy Reward List")
-st.markdown("## Exchange Reward With Best Buy Token")
+st.markdown("# Starbucks Reward List")
+st.markdown("## Exchange Reward With Starbucks Token")
 st.text(" \n")
 
 ################################################################################
@@ -106,7 +105,7 @@ st.sidebar.write(gift_address)
 
 # Write the Fintech Finder candidate's name to the sidebar
 
-st.sidebar.markdown("## Total Best Buy Reward Points")
+st.sidebar.markdown("## Total Starbucks Reward Points")
 
 ################################################################################
 # Step 2: Sign and Execute a Payment Transaction
