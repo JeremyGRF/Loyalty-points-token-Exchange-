@@ -4,6 +4,7 @@ pragma solidity ^0.5.0;
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20.sol";
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20Detailed.sol";
 
+// Create Nike ERC20 Loyalty Token
 contract Nike is ERC20, ERC20Detailed {
     address payable owner;
     uint public exchange_rate = 1 ether;
