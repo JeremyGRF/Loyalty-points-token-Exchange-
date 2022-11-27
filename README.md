@@ -20,7 +20,7 @@ Using Solidity 0.5.0 and 0.8.0
 ---
 
 ## Installation Guide
-To run the Loyalty Points Token Exchange files you must first have the following dependencies installed and set up:
+To run the Loyalty Points Token Exchange application you must first have the following dependencies installed and set up:
 
 * [streamlit](https://github.com/streamlit)
 ```python
