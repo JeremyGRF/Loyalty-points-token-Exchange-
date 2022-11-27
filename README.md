@@ -1,6 +1,6 @@
-# Loyalty-points-token-Exchange
+# Loyalty Points Token Exchange
 
-This Decentralized Application is an exchange where users can dopist their customer rewards points earned through purchases with specific brands (mock ERC20 Rewards Tokens for Delta, Starbucks, Nike, and BestBuy have been created for the development of this application), and receive our DAPP Loyalty Exchange Token (LET) in exchange. Users can then burn their LET token in order to withdraw any of the brand rewards tokens contained in the DAPP wallet. 
+### This Decentralized Application is an exchange where users can deposit their customer rewards points earned through purchases with specific brands (mock ERC20 Rewards Tokens for Delta, Starbucks, Nike, and BestBuy have been created for the development of this application), and receive our DAPP Loyalty Exchange Token (LET) in exchange. Users can then burn their LET token in order to withdraw any of the brand rewards tokens contained in the DAPP wallet. 
 ---
 
 ## Technologies
@@ -58,7 +58,7 @@ In order to use the smart contract part of this application:
 <br/>
 
 Streamlit Part of the Application: 
-* When a customer makes a purchase at one of the (mock) affiliated coporations (Best Buy, Nike, Starbucks, and Delta). They record the transaction in the streamlit site using the Exchange_app.py. They are then rewarded with the respective reward points as tokens. Their wallet then stores the balance of all these tokens. Or they can exchange those tokens into our Loyalty Exchange tokens to be stored in the exchangeable and central token. From the site, their balances are stored and can be referenced. 
+* When a customer makes a purchase at one of the (mock) affiliated corporations (Best Buy, Nike, Starbucks, and Delta). They record the transaction in the streamlit site using the Exchange_app.py. They are then rewarded with the respective reward points as tokens. Their wallet then stores the balance of all these tokens. Or they can exchange those tokens into our Loyalty Exchange tokens to be stored in the exchangeable and central token. From the site, their balances are stored and can be referenced. 
 
 ---
 
