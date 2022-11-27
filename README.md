@@ -54,9 +54,6 @@ In order to use the smart contract part of this application:
     * The selected amount of brand tokens will be sent to your address 
     * The selected amount of Loyalty Exchange Tokens will be burnt
 
-![Contract Example - Basic Use](Contracts/Basic_example.mov)
-
-![Contract Example - Send LET](Contracts/Send_LET.mov)
 
 <br/>
 
